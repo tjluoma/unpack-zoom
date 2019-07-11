@@ -210,3 +210,19 @@ This script is free to use/modify/redistribute as you see fit, with the followin
 
 - More limitations may be added if deemed necessary, although that seems entirely unlikely.
 
+## How to: 1) install or 2) use without installing
+
+If you're reading this, you probably know how to install this, but if you don't, that's OK too, I'll explain.
+
+1. Download [unpack-zoom.sh](https://raw.githubusercontent.com/tjluoma/unpack-zoom/master/unpack-zoom.sh) to your ~/Downloads/ folder
+2. In Terminal.app, type: `chmod 755 ~/Downloads/unpack-zoom.sh`
+3. Then put it in /usr/local/bin/ or somewhere else in your `$PATH`.
+
+If you don't want to 'install' it, you don't have to, just skip step 3 and you can leave it in your ~/Downloads/ folder. After you have downloaded `Zoom.pkg` you can use this command to run the script:
+
+	~/Downloads/unpack-zoom.sh ~/Downloads/zoom.pkg
+
+Replace `zoom.pkg` with the actual name of the file that you have downloaded. 
+
+Any questions/problems, [let me know here](https://github.com/tjluoma/unpack-zoom/issues).
+
