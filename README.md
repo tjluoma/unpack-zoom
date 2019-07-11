@@ -57,7 +57,7 @@ In fact, that almost looks like an entire installation's worth of files.
 
 Turns out, that's exactly what it is. I had tried to figure out what it was doing, but gave up. Jeff Nadeau did not. He tweeted:
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh hey, Zoom is that product that *installs the entire app* inside its package preflight script if it detects that you’re running as administrator. Naughty indeed.</p>&mdash; jnadeau (@jnadeau) <a href="https://twitter.com/jnadeau/status/1148463913647783936?ref_src=twsrc%5Etfw">July 9, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Oh hey, Zoom is that product that *installs the entire app* inside its package preflight script if it detects that you’re running as administrator. Naughty indeed.</p>&mdash; jnadeau (@jnadeau) <a href="https://twitter.com/jnadeau/status/1148463913647783936?ref_src=twsrc%5Etfw">July 9, 2019</a></blockquote>
 
 Yeah. I took a closer look, and I'm pretty sure he's right.
 
