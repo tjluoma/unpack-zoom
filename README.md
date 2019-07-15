@@ -35,7 +35,7 @@ After that, any time you double-click on a `.pkg` file (or even look at one usin
 
 **Suspicious Package** is completely free, and will show you the files that will be installed (except for Zoom, more on that later) as well as any scripts that will be run before or after installation. Just start looking at normal packages and you'll get a sense for when something doesn't seem 'right' but most of the time, it'll be fine, and if you want to open the .pkg in the official **Installer.app** you can do that right from **Suspicious Package**.
 
-### **Suspicious Package and Zoom**
+### Suspicious Package and Zoom
 
 I have used **Suspicious Package** for years and years, and I can tell you this, I have _never_ seen anything like Zoom.
 
