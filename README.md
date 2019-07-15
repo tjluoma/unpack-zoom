@@ -103,15 +103,15 @@ Let me explain what this is doing. Step 1:
 
 'Look in the folder "$APP_PATH" for any files named ".DS_Store". What is implied is "and show me the full path to each of them". They could make that explicit by writing it as
 
-    find "$APP_PATH" -name ".DS_Store" -print 
+    find "$APP_PATH" -name ".DS_Store" -print
 
 but the effect is the same either way. One way is just more clear.
 
-Step two: 
+Step two:
 
-	| sed 's/ /\\ /' 
+	| sed 's/ /\\ /'
 
-Then send (or "pipe") the output through `sed` and put a slash `/` in front of any spaces. (More on this in a moment.) 
+Then send (or "pipe") the output through `sed` and put a slash `/` in front of any spaces. (More on this in a moment.)
 
 Step three:
 
@@ -119,11 +119,11 @@ Step three:
 
 The send all of those files to the `rm` command (which will delete them).
 
-So, there are several problems here. 
+So, there are several problems here.
 
 First of all, the `sed` line is completely unnecessary. `find` already has way of dealing with paths with spaces in it. Instead of using `-print` (as shown above) you would just use `-print0` and then you would use `xargs -0 rm` instead of just `xargs rm`.
 
-But then it turns out that `xargs` is completely unnecessary too, as is `-print0` for `find` because **find already has the ability to delete files that it finds.** 
+But then it turns out that `xargs` is completely unnecessary too, as is `-print0` for `find` because **find already has the ability to delete files that it finds.**
 
 It's called… _wait for it_ … `-delete`. So that entire line, with two pipes and a completely unnecessary use of `sed`, could be replaced with this one command:
 
@@ -202,7 +202,7 @@ And please, if nothing else, use the installer properly, instead of the way that
 
 ## Feel free to use, mostly. (aka "License Terms")
 
-This script is free to use/modify/redistribute as you see fit, with the following limitations: 
+This script is free to use/modify/redistribute as you see fit, with the following limitations:
 
 - Making mention of my name in the acknowledgments would be nice, but not required. Same goes for a link back to here.
 
@@ -222,7 +222,12 @@ If you don't want to 'install' it, you don't have to, just skip step 3 and you c
 
 	~/Downloads/unpack-zoom.sh ~/Downloads/zoom.pkg
 
-Replace `zoom.pkg` with the actual name of the file that you have downloaded. 
+Replace `zoom.pkg` with the actual name of the file that you have downloaded.
 
 Any questions/problems, [let me know here](https://github.com/tjluoma/unpack-zoom/issues).
+
+## “I don’t know if I want to keep using Zoom on my Mac, but I _have_ to use Zoom for {insert reason here}…”
+
+If you have an iPhone/iPad or Android device, you might consider [using Zoom’s mobile apps](https://www.zoom.us/download) instead. That’s what I have decided to do for the time being.
+
 
